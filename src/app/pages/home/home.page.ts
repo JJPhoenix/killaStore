@@ -112,7 +112,7 @@ export class HomePage implements OnInit {
         price: 23.50
       },
     ]
-    this.showCart = true
+    this.showCart = false
   }
 
   ngOnInit(): void {
