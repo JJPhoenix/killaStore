@@ -163,7 +163,7 @@ class BannerPageComponent {
     }
 }
 BannerPageComponent.ɵfac = function BannerPageComponent_Factory(t) { return new (t || BannerPageComponent)(); };
-BannerPageComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BannerPageComponent, selectors: [["app-banner-page"]], decls: 12, vars: 0, consts: [[1, "h-64", "rounded-md", "overflow-hidden", "bg-cover", "bg-center", 2, "background-image", "url('assets/img/telar_andino.jpeg')"], [1, "bg-gray-900", "bg-opacity-50", "flex", "items-center", "h-full"], [1, "px-10", "max-w-xl"], [1, "text-2xl", "text-white", "font-semibold"], [1, "mt-2", "text-white"], [1, "flex", "items-center", "mt-4", "px-3", "py-2", "bg-blue-600", "text-white", "text-sm", "uppercase", "font-medium", "rounded", "hover:bg-blue-500", "focus:outline-none", "focus:bg-blue-500"], ["fill", "none", "stroke-linecap", "round", "stroke-linejoin", "round", "stroke-width", "2", "viewBox", "0 0 24 24", "stroke", "currentColor", 1, "h-5", "w-5", "mx-2"], ["d", "M17 8l4 4m0 0l-4 4m4-4H3"]], template: function BannerPageComponent_Template(rf, ctx) { if (rf & 1) {
+BannerPageComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BannerPageComponent, selectors: [["app-banner-page"]], decls: 12, vars: 0, consts: [[1, "h-64", "rounded-md", "overflow-hidden", "bg-cover", "bg-center", 2, "background-image", "url('assets/img/telar_andino.jpeg')"], [1, "bg-gray-900", "bg-opacity-50", "flex", "items-center", "h-full"], [1, "px-10", "max-w-xl"], [1, "text-2xl", "text-white", "font-semibold"], [1, "mt-2", "text-white"], [1, "flex", "items-center", "mt-4", "px-3", "py-2", "text-white", "text-sm", "uppercase", "font-medium", "rounded", "hover:", "focus:outline-none", "focus:", 2, "background-color", "#F47C7C"], ["fill", "none", "stroke-linecap", "round", "stroke-linejoin", "round", "stroke-width", "2", "viewBox", "0 0 24 24", "stroke", "currentColor", 1, "h-5", "w-5", "mx-2"], ["d", "M17 8l4 4m0 0l-4 4m4-4H3"]], template: function BannerPageComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -210,7 +210,7 @@ class CardProductComponent {
     }
 }
 CardProductComponent.ɵfac = function CardProductComponent_Factory(t) { return new (t || CardProductComponent)(); };
-CardProductComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CardProductComponent, selectors: [["app-card-product"]], inputs: { priceProduct: "priceProduct", nameProduct: "nameProduct", imgPath: "imgPath" }, decls: 10, vars: 4, consts: [[1, "w-full", "max-w-sm", "mx-auto", "rounded-md", "shadow-md", "overflow-hidden"], [1, "flex", "items-end", "justify-end", "h-56", "w-full", "bg-cover"], [1, "p-2", "rounded-full", "bg-blue-600", "text-white", "mx-5", "-mb-4", "hover:bg-blue-500", "focus:outline-none", "focus:bg-blue-500"], ["fill", "none", "stroke-linecap", "round", "stroke-linejoin", "round", "stroke-width", "2", "viewBox", "0 0 24 24", "stroke", "currentColor", 1, "h-5", "w-5"], ["d", "M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"], [1, "px-5", "py-3"], [1, "text-gray-700", "uppercase"], [1, "text-gray-500", "mt-2"]], template: function CardProductComponent_Template(rf, ctx) { if (rf & 1) {
+CardProductComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CardProductComponent, selectors: [["app-card-product"]], inputs: { priceProduct: "priceProduct", nameProduct: "nameProduct", imgPath: "imgPath" }, decls: 10, vars: 4, consts: [[1, "w-full", "max-w-sm", "mx-auto", "rounded-md", "shadow-md", "overflow-hidden"], [1, "flex", "items-end", "justify-end", "h-56", "w-full", "bg-cover"], [1, "p-2", "rounded-full", "text-white", "mx-5", "-mb-4", "hover:", "focus:outline-none", 2, "background-color", "#F47C7C"], ["fill", "none", "stroke-linecap", "round", "stroke-linejoin", "round", "stroke-width", "2", "viewBox", "0 0 24 24", "stroke", "currentColor", 1, "h-5", "w-5"], ["d", "M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"], [1, "px-5", "py-3"], [1, "uppercase", 2, "color", "#F47C7C"], [1, "mt-2", 2, "color", "#F47C7C"]], template: function CardProductComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "button", 2);
@@ -344,14 +344,16 @@ class ShoppingCartsComponent {
                 code: '001',
                 name: 'Abrigo Siale',
                 imgPath: 'AbrigoSiale.png',
-                price: 23.50
+                price: 23.50,
+                offer: true
             },
             {
                 id: 2,
                 code: '002',
                 name: 'Bolsa escudo Nacional',
                 imgPath: 'BolsoEscudoNacional.png',
-                price: 23.50
+                price: 23.50,
+                offer: true
             }
         ];
     }
@@ -509,12 +511,12 @@ __webpack_require__.r(__webpack_exports__);
 
 function HomePage_app_shopping_carts_2_Template(rf, ctx) { if (rf & 1) {
     const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "app-shopping-carts", 36);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "app-shopping-carts", 37);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("closeModal", function HomePage_app_shopping_carts_2_Template_app_shopping_carts_closeModal_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r3); const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return ctx_r2.showCartModal(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
 } }
 function HomePage_app_card_product_43_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "app-card-product", 37);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "app-card-product", 38);
 } if (rf & 2) {
     const product_r4 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("nameProduct", product_r4.name)("priceProduct", product_r4.price)("imgPath", product_r4.imgPath);
@@ -527,101 +529,115 @@ class HomePage {
                 code: '001',
                 name: 'Abrigo Siale',
                 imgPath: 'AbrigoSiale.png',
-                price: 23.50
+                price: 23.50,
+                offer: false
             },
             {
                 id: 2,
                 code: '002',
                 name: 'Bolsa escudo Nacional',
                 imgPath: 'BolsoEscudoNacional.png',
-                price: 23.50
+                price: 23.50,
+                offer: false
             },
             {
                 id: 3,
                 code: '003',
                 name: 'Bomber Jacket',
                 imgPath: 'BomberJacket.png',
-                price: 23.50
+                price: 23.50,
+                offer: false
             },
             {
                 id: 4,
                 code: '004',
                 name: 'Coleccion Mujeres Poderosa Warmis unidas',
                 imgPath: 'COLECCIONUYARIWARMIPACHA.png',
-                price: 23.50
+                price: 23.50,
+                offer: false
             },
             {
                 id: 5,
                 code: '005',
                 name: 'Coleccion Mujeres Poderosa Micaela Morado',
                 imgPath: 'ColecciónMujeresPoderosasMicaelaMorado.png',
-                price: 23.50
+                price: 23.50,
+                offer: false
             },
             {
                 id: 6,
                 code: '006',
                 name: 'Cuadro Condor Hembra',
                 imgPath: 'CuadroCondorHembra.png',
-                price: 23.50
+                price: 23.50,
+                offer: false
             },
             {
                 id: 7,
                 code: '007',
                 name: 'Cuadro de la llegada del condor',
                 imgPath: 'CuadroDeLaLlegadaDelCondor.png',
-                price: 23.50
+                price: 23.50,
+                offer: false
             },
             {
                 id: 8,
                 code: '008',
                 name: 'Cuadro Empollerate',
                 imgPath: 'CuadroEmpollerate.png',
-                price: 23.50
+                price: 23.50,
+                offer: false
             },
             {
                 id: 9,
                 code: '009',
                 name: 'Cuadro la Candelaria',
                 imgPath: 'CuadroLaCandelaria.png',
-                price: 23.50
+                price: 23.50,
+                offer: false
             },
             {
                 id: 10,
                 code: '010',
                 name: 'Muñeca Simona',
                 imgPath: 'MuñecaSimona.png',
-                price: 23.50
+                price: 23.50,
+                offer: false
             },
             {
                 id: 11,
                 code: '011',
                 name: 'Pollera Rosas Ivory',
                 imgPath: 'PolleraRosasIvory.png',
-                price: 23.50
+                price: 23.50,
+                offer: false
             },
             {
                 id: 12,
                 code: '012',
                 name: 'Warmis Unidas',
                 imgPath: 'WarmisUnidas.png',
-                price: 23.50
+                price: 23.50,
+                offer: false
             },
             {
                 id: 13,
                 code: '013',
                 name: 'Pollera Rosas Ivory Sin Bordados',
                 imgPath: 'PolleraRosasIvorySinBordados.png',
-                price: 23.50
+                price: 23.50,
+                offer: false
             },
             {
                 id: 14,
                 code: '014',
                 name: 'Pollera Coleccion Botanica Cantuta',
                 imgPath: 'PolleraColeccionBotanicaCantuta.png',
-                price: 23.50
+                price: 23.50,
+                offer: false
             },
         ];
-        this.showCart = true;
+        this.showCart = false;
     }
     ngOnInit() {
     }
@@ -630,7 +646,7 @@ class HomePage {
     }
 }
 HomePage.ɵfac = function HomePage_Factory(t) { return new (t || HomePage)(); };
-HomePage.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: HomePage, selectors: [["app-home"]], decls: 50, vars: 2, consts: [["x-data", "{ cartOpen: false , isOpen: false }", 1, "bg-white"], [3, "closeModal", 4, "ngIf"], [1, "container", "mx-auto", "px-6", "py-3"], [1, "flex", "items-center", "justify-between"], [1, "hidden", "w-full", "text-gray-600", "md:flex", "md:items-center"], ["viewBox", "0 0 24 24", "fill", "none", "xmlns", "http://www.w3.org/2000/svg", 1, "h-5", "w-5"], ["fill-rule", "evenodd", "clip-rule", "evenodd", "d", "M16.2721 10.2721C16.2721 12.4813 14.4813 14.2721 12.2721 14.2721C10.063 14.2721 8.27214 12.4813 8.27214 10.2721C8.27214 8.06298 10.063 6.27212 12.2721 6.27212C14.4813 6.27212 16.2721 8.06298 16.2721 10.2721ZM14.2721 10.2721C14.2721 11.3767 13.3767 12.2721 12.2721 12.2721C11.1676 12.2721 10.2721 11.3767 10.2721 10.2721C10.2721 9.16755 11.1676 8.27212 12.2721 8.27212C13.3767 8.27212 14.2721 9.16755 14.2721 10.2721Z", "fill", "currentColor"], ["fill-rule", "evenodd", "clip-rule", "evenodd", "d", "M5.79417 16.5183C2.19424 13.0909 2.05438 7.39409 5.48178 3.79417C8.90918 0.194243 14.6059 0.054383 18.2059 3.48178C21.8058 6.90918 21.9457 12.6059 18.5183 16.2059L12.3124 22.7241L5.79417 16.5183ZM17.0698 14.8268L12.243 19.8965L7.17324 15.0698C4.3733 12.404 4.26452 7.97318 6.93028 5.17324C9.59603 2.3733 14.0268 2.26452 16.8268 4.93028C19.6267 7.59603 19.7355 12.0268 17.0698 14.8268Z", "fill", "currentColor"], [1, "mx-1", "text-sm"], [1, "w-full", "text-gray-700", "md:text-center", "text-2xl", "font-semibold"], [1, "flex", "items-center", "justify-end", "w-full"], [1, "text-gray-600", "focus:outline-none", "mx-4", "sm:mx-0", 3, "click"], ["fill", "none", "stroke-linecap", "round", "stroke-linejoin", "round", "stroke-width", "2", "viewBox", "0 0 24 24", "stroke", "currentColor", 1, "h-5", "w-5"], ["d", "M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"], [1, "flex", "sm:hidden"], ["type", "button", "aria-label", "toggle menu", 1, "text-gray-600", "hover:text-gray-500", "focus:outline-none", "focus:text-gray-500"], ["viewBox", "0 0 24 24", 1, "h-6", "w-6", "fill-current"], ["fill-rule", "evenodd", "d", "M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"], [1, "sm:flex", "sm:justify-center", "sm:items-center", "mt-4"], [1, "flex", "flex-col", "sm:flex-row"], ["href", "#", 1, "mt-3", "text-gray-600", "hover:underline", "sm:mx-3", "sm:mt-0"], [1, "relative", "mt-6", "max-w-lg", "mx-auto"], [1, "absolute", "inset-y-0", "left-0", "pl-3", "flex", "items-center"], ["viewBox", "0 0 24 24", "fill", "none", 1, "h-5", "w-5", "text-gray-500"], ["d", "M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z", "stroke", "currentColor", "stroke-width", "2", "stroke-linecap", "round", "stroke-linejoin", "round"], ["type", "text", "placeholder", "Buscar Producto", 1, "w-full", "border", "rounded-md", "pl-10", "pr-4", "py-2", "focus:border-blue-500", "focus:outline-none", "focus:shadow-outline"], [1, "my-8"], [1, "container", "mx-auto", "px-6"], [1, "mt-16"], [1, "text-gray-600", "text-2xl", "font-medium"], [1, "grid", "gap-6", "grid-cols-1", "sm:grid-cols-2", "lg:grid-cols-3", "xl:grid-cols-4", "mt-6"], [3, "nameProduct", "priceProduct", "imgPath", 4, "ngFor", "ngForOf"], [1, "bg-gray-200"], [1, "container", "mx-auto", "px-6", "py-3", "flex", "justify-between", "items-center"], ["href", "#", 1, "text-xl", "font-bold", "text-gray-500", "hover:text-gray-400"], [1, "py-2", "text-gray-500", "sm:py-0"], [3, "closeModal"], [3, "nameProduct", "priceProduct", "imgPath"]], template: function HomePage_Template(rf, ctx) { if (rf & 1) {
+HomePage.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: HomePage, selectors: [["app-home"]], decls: 50, vars: 2, consts: [["x-data", "{ cartOpen: false , isOpen: false }", 2, "background-color", "#FFF2F2"], [3, "closeModal", 4, "ngIf"], [1, "container", "mx-auto", "px-6", "py-3"], [1, "flex", "items-center", "justify-between"], [1, "hidden", "w-full", "text-white", "md:flex", "md:items-center"], ["viewBox", "0 0 24 24", "fill", "none", "xmlns", "http://www.w3.org/2000/svg", 1, "h-5", "w-5"], ["fill-rule", "evenodd", "clip-rule", "evenodd", "d", "M16.2721 10.2721C16.2721 12.4813 14.4813 14.2721 12.2721 14.2721C10.063 14.2721 8.27214 12.4813 8.27214 10.2721C8.27214 8.06298 10.063 6.27212 12.2721 6.27212C14.4813 6.27212 16.2721 8.06298 16.2721 10.2721ZM14.2721 10.2721C14.2721 11.3767 13.3767 12.2721 12.2721 12.2721C11.1676 12.2721 10.2721 11.3767 10.2721 10.2721C10.2721 9.16755 11.1676 8.27212 12.2721 8.27212C13.3767 8.27212 14.2721 9.16755 14.2721 10.2721Z", "fill", "currentColor", 2, "color", "#F47C7C"], ["fill-rule", "evenodd", "clip-rule", "evenodd", "d", "M5.79417 16.5183C2.19424 13.0909 2.05438 7.39409 5.48178 3.79417C8.90918 0.194243 14.6059 0.054383 18.2059 3.48178C21.8058 6.90918 21.9457 12.6059 18.5183 16.2059L12.3124 22.7241L5.79417 16.5183ZM17.0698 14.8268L12.243 19.8965L7.17324 15.0698C4.3733 12.404 4.26452 7.97318 6.93028 5.17324C9.59603 2.3733 14.0268 2.26452 16.8268 4.93028C19.6267 7.59603 19.7355 12.0268 17.0698 14.8268Z", "fill", "currentColor", 2, "color", "#F47C7C"], [1, "mx-1", "text-sm", 2, "color", "#F47C7C"], [1, "w-full", "flex", "flex-row", "justify-center", 2, "color", "#F47C7C"], ["src", "assets/img/WARMIPACHA.png", "alt", "Logo", 1, "object-contain", "w-32", "h-32"], [1, "flex", "items-center", "justify-end", "w-full"], [1, "text-white", "focus:outline-none", "mx-4", "sm:mx-0", 2, "color", "#F47C7C", 3, "click"], ["fill", "none", "stroke-linecap", "round", "stroke-linejoin", "round", "stroke-width", "2", "viewBox", "0 0 24 24", "stroke", "currentColor", 1, "h-5", "w-5"], ["d", "M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"], [1, "flex", "sm:hidden"], ["type", "button", "aria-label", "toggle menu", 1, "hover:text-gray-500", "focus:outline-none", "focus:text-gray-500", 2, "color", "#F47C7C"], ["viewBox", "0 0 24 24", 1, "h-6", "w-6", "fill-current"], ["fill-rule", "evenodd", "d", "M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"], [1, "sm:flex", "sm:justify-center", "sm:items-center", "mt-4"], [1, "flex", "flex-col", "sm:flex-row", 2, "color", "#F47C7C"], ["href", "#", 1, "mt-3", "hover:underline", "sm:mx-3", "sm:mt-0"], [1, "relative", "mt-6", "max-w-lg", "mx-auto"], [1, "absolute", "inset-y-0", "left-0", "pl-3", "flex", "items-center"], ["viewBox", "0 0 24 24", "fill", "none", 1, "h-5", "w-5", "text-gray-500", 2, "color", "#F47C7C"], ["d", "M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z", "stroke", "currentColor", "stroke-width", "2", "stroke-linecap", "round", "stroke-linejoin", "round"], ["type", "text", "placeholder", "Buscar Producto", 1, "w-full", "border", "rounded-md", "pl-10", "pr-4", "py-2", "focus:border-blue-500", "focus:outline-none", "focus:shadow-outline"], [1, "my-8"], [1, "container", "mx-auto", "px-6"], [1, "mt-16"], [1, "text-2xl", "font-medium", 2, "color", "#F47C7C"], [1, "grid", "gap-6", "grid-cols-1", "sm:grid-cols-2", "lg:grid-cols-3", "xl:grid-cols-4", "mt-6"], [3, "nameProduct", "priceProduct", "imgPath", 4, "ngFor", "ngForOf"], [1, "bg-gray-200"], [1, "container", "mx-auto", "px-6", "py-3", "flex", "justify-between", "items-center"], ["href", "#", 1, "text-xl", "font-bold", "text-gray-500", "hover:text-gray-400"], [1, "py-2", "text-gray-500", "sm:py-0"], [3, "closeModal"], [3, "nameProduct", "priceProduct", "imgPath"]], template: function HomePage_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](1, "header");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](2, HomePage_app_shopping_carts_2_Template, 1, 0, "app-shopping-carts", 1);
@@ -648,75 +664,75 @@ HomePage.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵd
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](11, "div", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](12, " WarmiPacha Store ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](12, "img", 10);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](13, "div", 10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](14, "button", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](13, "div", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](14, "button", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function HomePage_Template_button_click_14_listener() { return ctx.showCartModal(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnamespaceSVG"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](15, "svg", 12);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](16, "path", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](15, "svg", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](16, "path", 14);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnamespaceHTML"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](17, "div", 14);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](18, "button", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](17, "div", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](18, "button", 16);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnamespaceSVG"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](19, "svg", 16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](20, "path", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](19, "svg", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](20, "path", 18);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnamespaceHTML"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](21, "nav", 18);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](22, "div", 19);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](23, "a", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](21, "nav", 19);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](22, "div", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](23, "a", 21);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](24, "Home");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](25, "a", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](25, "a", 21);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](26, "Tienda");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](27, "a", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](27, "a", 21);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](28, "Contacto");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](29, "a", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](29, "a", 21);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](30, "Acerca");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](31, "div", 21);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](32, "span", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](31, "div", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](32, "span", 23);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnamespaceSVG"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](33, "svg", 23);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](34, "path", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](33, "svg", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](34, "path", 25);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnamespaceHTML"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](35, "input", 25);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](35, "input", 26);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](36, "main", 26);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](37, "div", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](36, "main", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](37, "div", 28);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](38, "app-banner-page");
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](39, "div", 28);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](40, "h3", 29);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](39, "div", 29);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](40, "h3", 30);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](41, "Productos");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](42, "div", 30);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](43, HomePage_app_card_product_43_Template, 1, 3, "app-card-product", 31);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](42, "div", 31);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](43, HomePage_app_card_product_43_Template, 1, 3, "app-card-product", 32);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](44, "footer", 32);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](45, "div", 33);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](46, "a", 34);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](44, "footer", 33);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](45, "div", 34);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](46, "a", 35);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](47, "WarmiPacha Store");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](48, "p", 35);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](48, "p", 36);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](49, "Todo los derechos reservados");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();

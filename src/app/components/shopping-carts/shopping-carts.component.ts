@@ -17,14 +17,16 @@ export class ShoppingCartsComponent implements OnInit {
         code: '001',
         name: 'Abrigo Siale',
         imgPath: 'AbrigoSiale.png',
-        price: 23.50
+        price: 23.50,
+        offer:true
       },
       {
         id: 2,
         code: '002',
         name: 'Bolsa escudo Nacional',
         imgPath: 'BolsoEscudoNacional.png',
-        price: 23.50
+        price: 23.50,
+        offer:true
       }
     ]
   }
