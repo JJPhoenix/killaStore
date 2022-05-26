@@ -8,6 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class CardProductComponent implements OnInit {
   @Input() priceProduct: number = 0;
   @Input() nameProduct: String|undefined;
+  @Input() imgPath: String|undefined;
 
   constructor() { }
 

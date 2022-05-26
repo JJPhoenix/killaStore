@@ -1,6 +1,6 @@
 <div x-data="{ cartOpen: false , isOpen: false }" class="bg-white">
   <header>
-    <!--<app-shopping-carts></app-shopping-carts>-->
+    <app-shopping-carts *ngIf="showCart" (closeModal)="showCartModal()"></app-shopping-carts>
     <div class="container mx-auto px-6 py-3">
       <div class="flex items-center justify-between">
         <div class="hidden w-full text-gray-600 md:flex md:items-center">
@@ -18,7 +18,7 @@
           WarmiPacha Store
         </div>
         <div class="flex items-center justify-end w-full">
-          <button class="text-gray-600 focus:outline-none mx-4 sm:mx-0">
+          <button class="text-gray-600 focus:outline-none mx-4 sm:mx-0" (click)="showCartModal()">
             <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                  viewBox="0 0 24 24" stroke="currentColor">
               <path
@@ -69,6 +69,7 @@
           <app-card-product *ngFor="let product of products"
                             [nameProduct]="product.name"
                             [priceProduct]="product.price"
+                            [imgPath]="product.imgPath"
           ></app-card-product>
         </div>
       </div>
