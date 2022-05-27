@@ -166,6 +166,86 @@ export class HomePage implements OnInit {
         price: 23.50,
         offer: false
       },
+      {
+        id: 15,
+        code: '015',
+        name: 'Cartera Urbana Única Warmi',
+        imgPath: 'CarteraUrbanaUnicaWarmi.png',
+        price: 23.50,
+        offer: false
+      },
+      {
+        id: 16,
+        code: '016',
+        name: 'Casaca Aves 34 Warmi',
+        imgPath: 'CasacaAves34Warmi.png',
+        price: 23.50,
+        offer: false
+      },
+      {
+        id: 17,
+        code: '017',
+        name: 'Casaca de cuero Flor Warmi',
+        imgPath: 'CasacaDeCueroFlorWarmi.png',
+        price: 23.50,
+        offer: false
+      },
+      {
+        id: 18,
+        code: '018',
+        name: 'Casaca de cuero Warmi',
+        imgPath: 'CasacaDeCueroWarmi.png',
+        price: 23.50,
+        offer: false
+      },
+      {
+        id: 19,
+        code: '019',
+        name: 'Casaca Floreada Warmi 21.',
+        imgPath: 'CasacaFloreadaWarmi21.png',
+        price: 23.50,
+        offer: false
+      },
+      {
+        id: 20,
+        code: '020',
+        name: 'Casaca Floreada Warmi 56',
+        imgPath: 'CasacaFloreadaWarmi56.png',
+        price: 23.50,
+        offer: false
+      },
+      {
+        id: 21,
+        code: '021',
+        name: 'Casaca Jean Warmi',
+        imgPath: 'CasacaJeanWarmi.png',
+        price: 23.50,
+        offer: false
+      },
+      {
+        id: 22,
+        code: '022',
+        name: 'Casaca Tor 21 Warmi',
+        imgPath: 'CasacaTor21Warmi.png',
+        price: 23.50,
+        offer: false
+      },
+      {
+        id: 23,
+        code: '023',
+        name: 'Casaca Única Warmi 98',
+        imgPath: 'CasacaUnicaWarmi98.png',
+        price: 23.50,
+        offer: false
+      },
+      {
+        id: 24,
+        code: '024',
+        name: 'Jean Flor Warmi 5',
+        imgPath: 'JeanFlorWarmi5.png',
+        price: 23.50,
+        offer: false
+      },
     ]
     this.showCart = false
     this.productsSelected = []
