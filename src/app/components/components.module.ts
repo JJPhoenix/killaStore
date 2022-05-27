@@ -3,14 +3,14 @@ import { CardProductComponent } from './card-product/card-product.component';
 import { BannerPageComponent } from './banner-page/banner-page.component';
 import { ShoppingCartsComponent } from './shopping-carts/shopping-carts.component';
 import {CommonModule} from "@angular/common";
-import { ContactModalComponent } from './contact-modal/contact-modal.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
     declarations: [
         CardProductComponent,
         BannerPageComponent,
         ShoppingCartsComponent,
-        ContactModalComponent
+        ContactFormComponent
     ],
     imports: [
         CommonModule
@@ -18,7 +18,8 @@ import { ContactModalComponent } from './contact-modal/contact-modal.component';
     exports: [
         CardProductComponent,
         BannerPageComponent,
-        ShoppingCartsComponent
+        ShoppingCartsComponent,
+        ContactFormComponent
     ]
 })
 

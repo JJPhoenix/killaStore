@@ -27,10 +27,41 @@
         href="#">Quiénes Somos</a>
       <a class="text-sm font-medium text-gray-200 transition-colors duration-300 transform hover:text-indigo-400"
         href="#">Noticias</a>
-      <a class="px-4 py-1 text-sm font-medium text-center text-gray-200 transition-colors duration-300 transform border rounded hover:bg-indigo-400"
-        href="#">Contáctanos</a>
+      <button (click)="open(content)" class="px-4 py-1 text-sm font-medium text-center text-gray-200 transition-colors duration-300 transform border rounded hover:bg-indigo-400">
+        Contáctanos
+      </button>
     </div>
   </nav>
+
+  <ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="contact-modal">Informacion de contacto</h4>
+      <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-group">
+            <label class="form-label" for="nameInput">Nombres y Apellidos:</label>
+            <input type="text" class="form-control" id="nameInput">
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="emailInput">Correo:</label>
+            <input type="email" class="form-control" id="emailInput">
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="phoneInput">Telefono:</label>
+            <input type="text" class="form-control" id="phoneInput">
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="messageInput">Mensaje:</label>
+            <textarea class="form-control" id="phoneInput" rows="3"></textarea>
+        </div>
+    </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+    </div>
+  </ng-template>
 
   <section class="relative bg-blueGray-50">
     <div class="relative pt-16 pb-32 px-8 flex content-center items-center justify-center min-h-screen-100">
@@ -425,3 +456,5 @@
     <p class="font-medium text-white">Terms of Service</p>
   </div>
 </footer>
+
+<app-contact-form></app-contact-form>
