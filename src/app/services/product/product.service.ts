@@ -13,7 +13,8 @@ export class ProductService {
   }
 
   getProducts(): IProduct[]{
-    return PRODUCTS_MOCK.success;
+    return [];
+    // return PRODUCTS_MOCK.success;
   }
 
 }

@@ -3,12 +3,14 @@ import { CardProductComponent } from './card-product/card-product.component';
 import { BannerPageComponent } from './banner-page/banner-page.component';
 import { ShoppingCartsComponent } from './shopping-carts/shopping-carts.component';
 import {CommonModule} from "@angular/common";
+import { ContactModalComponent } from './contact-modal/contact-modal.component';
 
 @NgModule({
     declarations: [
         CardProductComponent,
         BannerPageComponent,
-        ShoppingCartsComponent
+        ShoppingCartsComponent,
+        ContactModalComponent
     ],
     imports: [
         CommonModule
