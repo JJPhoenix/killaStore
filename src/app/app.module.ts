@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import {HomeModule} from "./pages/home/home.module";
 import {ComponentsModule} from "./components/components.module";
 import {ProductoraModule} from "./pages/productora/productora.module";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {ProductoraModule} from "./pages/productora/productora.module";
     AppRoutingModule,
     HomeModule,
     ProductoraModule,
-    ComponentsModule
+    ComponentsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
