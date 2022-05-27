@@ -1,5 +1,18 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {IProduct} from "../../common/interfaces/product.interface";
+import {
+  CONTENIDOACERCA,
+  CONTENIDOBANNER,
+  CONTENIDOBANNERBTN,
+  CONTENIDOBTNCONTACTO,
+  CONTENIDOBTNHOME,
+  CONTENIDOBTNTIENDA,
+  CONTENIDOCARTCONTINUARPAGANDO,
+  CONTENIDOCARTPAGARCUENTA,
+  CONTENIDOCARTSTOTAL,
+  CONTENIDOCARTTITULO, CONTENIDOMISION, CONTENIDOMISIONTITULO,
+  CONTENIDOPRODUCTO, CONTENIDOVISION, CONTENIDOVISIONTITULO
+} from "../../common/constants/contenido.constants";
 
 @Component({
   selector: 'app-home',
@@ -10,15 +23,43 @@ export class HomePage implements OnInit {
 
   products: IProduct[];
   showCart: boolean;
+  productsSelected: IProduct[];
+  price: number;
+  language: boolean;
+
+  misionTitulo:string|undefined
+  mision:string|undefined
+  visionTitulo:string|undefined
+  vision:string|undefined
+
+  conteidoBanner: string|undefined
+  btnBanner: string|undefined
+
+  btnHome: string|undefined
+  btnTienda: string|undefined
+  btnContacto: string|undefined
+
+  labelProducts: string|undefined
+
+  tituloCart: string|undefined
+  precioCart: string|undefined
+  cuentaDirectaCart: string|undefined
+  pagarCart: string|undefined
+  continuarPagandoCart: string|undefined
+
+
+  acerca: string|undefined
 
   constructor() {
+    this.language = false
+    this.price = 0
     this.products = [
       {
         id: 1,
         code: '001',
         name: 'Abrigo Siale',
         imgPath: 'AbrigoSiale.png',
-        price: 23.50,
+        price: 120.00,
         offer:false
       },
       {
@@ -26,7 +67,7 @@ export class HomePage implements OnInit {
         code: '002',
         name: 'Bolsa escudo Nacional',
         imgPath: 'BolsoEscudoNacional.png',
-        price: 23.50,
+        price: 40.00,
         offer: false
       },
       {
@@ -34,7 +75,7 @@ export class HomePage implements OnInit {
         code: '003',
         name: 'Bomber Jacket',
         imgPath: 'BomberJacket.png',
-        price: 23.50,
+        price: 150.00,
         offer: false
       },
       {
@@ -42,7 +83,7 @@ export class HomePage implements OnInit {
         code: '004',
         name: 'Coleccion Mujeres Poderosa Warmis unidas',
         imgPath: 'COLECCIONUYARIWARMIPACHA.png',
-        price: 23.50,
+        price: 110.00,
         offer: false
       },
       {
@@ -50,7 +91,7 @@ export class HomePage implements OnInit {
         code: '005',
         name: 'Coleccion Mujeres Poderosa Micaela Morado',
         imgPath: 'ColecciónMujeresPoderosasMicaelaMorado.png',
-        price: 23.50,
+        price: 110.00,
         offer: false
       },
       {
@@ -58,7 +99,7 @@ export class HomePage implements OnInit {
         code: '006',
         name: 'Cuadro Condor Hembra',
         imgPath: 'CuadroCondorHembra.png',
-        price: 23.50,
+        price: 60.00,
         offer: false
       },
       {
@@ -66,7 +107,7 @@ export class HomePage implements OnInit {
         code: '007',
         name: 'Cuadro de la llegada del condor',
         imgPath: 'CuadroDeLaLlegadaDelCondor.png',
-        price: 23.50,
+        price: 60.00,
         offer: false
       },
       {
@@ -74,7 +115,7 @@ export class HomePage implements OnInit {
         code: '008',
         name: 'Cuadro Empollerate',
         imgPath: 'CuadroEmpollerate.png',
-        price: 23.50,
+        price: 60.00,
         offer: false
       },
       {
@@ -82,7 +123,7 @@ export class HomePage implements OnInit {
         code: '009',
         name: 'Cuadro la Candelaria',
         imgPath: 'CuadroLaCandelaria.png',
-        price: 23.50,
+        price: 60.00,
         offer: false
       },
       {
@@ -90,15 +131,15 @@ export class HomePage implements OnInit {
         code: '010',
         name: 'Muñeca Simona',
         imgPath: 'MuñecaSimona.png',
-        price: 23.50,
+        price: 40.00,
         offer: false
       },
       {
         id: 11,
         code: '011',
-        name: 'Pollera Rosas Ivory',
+        name: 'Colección Uyari Rosas Ivory',
         imgPath: 'PolleraRosasIvory.png',
-        price: 23.50,
+        price: 110.00,
         offer: false
       },
       {
@@ -106,15 +147,15 @@ export class HomePage implements OnInit {
         code: '012',
         name: 'Warmis Unidas',
         imgPath: 'WarmisUnidas.png',
-        price: 23.50,
+        price: 110.00,
         offer: false
       },
       {
         id: 13,
         code: '013',
-        name: 'Pollera Rosas Ivory Sin Bordados',
+        name: 'Colección Uyari Rosas Ivory Sin Bordados',
         imgPath: 'PolleraRosasIvorySinBordados.png',
-        price: 23.50,
+        price: 110.00,
         offer: false
       },
       {
@@ -127,6 +168,29 @@ export class HomePage implements OnInit {
       },
     ]
     this.showCart = false
+    this.productsSelected = []
+
+    this.conteidoBanner = CONTENIDOBANNER.contenidoEsp
+    this.btnBanner = CONTENIDOBANNERBTN.contenidoEsp
+
+    this.btnHome = CONTENIDOBTNHOME.contenidoEsp
+    this.btnTienda = CONTENIDOBTNTIENDA.contenidoEsp
+    this.btnContacto = CONTENIDOBTNCONTACTO.contenidoEsp
+
+    this.labelProducts = CONTENIDOPRODUCTO.contenidoEsp
+
+    this.tituloCart = CONTENIDOCARTTITULO.contenidoEsp
+    this.precioCart = CONTENIDOCARTSTOTAL.contenidoEsp
+    this.pagarCart = CONTENIDOCARTPAGARCUENTA.contenidoEsp
+    this.continuarPagandoCart = CONTENIDOCARTCONTINUARPAGANDO.contenidoEsp
+
+    this.misionTitulo= CONTENIDOMISIONTITULO.contenidoEsp
+    this.visionTitulo= CONTENIDOVISIONTITULO.contenidoEsp
+
+    this.vision=CONTENIDOVISION.contenidoEsp
+    this.mision=CONTENIDOMISION.contenidoEsp
+
+    this.acerca = CONTENIDOACERCA.contenidoEsp
   }
 
   ngOnInit(): void {
@@ -134,6 +198,71 @@ export class HomePage implements OnInit {
 
   showCartModal(){
     this.showCart = !this.showCart
+  }
+
+  changeLanguage(){
+    if (this.language){
+
+      this.conteidoBanner = CONTENIDOBANNER.contenidoEsp
+
+      this.btnBanner = CONTENIDOBANNERBTN.contenidoEsp
+
+      this.btnHome = CONTENIDOBTNHOME.contenidoEsp
+      this.btnTienda = CONTENIDOBTNTIENDA.contenidoEsp
+      this.btnContacto = CONTENIDOBTNCONTACTO.contenidoEsp
+
+      this.labelProducts = CONTENIDOPRODUCTO.contenidoEsp
+
+      this.tituloCart = CONTENIDOCARTTITULO.contenidoEsp
+      this.precioCart = CONTENIDOCARTSTOTAL.contenidoEsp
+      this.pagarCart = CONTENIDOCARTPAGARCUENTA.contenidoEsp
+      this.continuarPagandoCart = CONTENIDOCARTCONTINUARPAGANDO.contenidoEsp
+
+
+      this.misionTitulo= CONTENIDOMISIONTITULO.contenidoEsp
+      this.visionTitulo= CONTENIDOVISIONTITULO.contenidoEsp
+
+      this.vision=CONTENIDOVISION.contenidoEsp
+      this.mision=CONTENIDOMISION.contenidoEsp
+
+      this.acerca = CONTENIDOACERCA.contenidoEsp
+    }else {
+      this.conteidoBanner = CONTENIDOBANNER.contenidoQuechua
+      this.btnBanner = CONTENIDOBANNERBTN.contenidoQuechua
+
+      this.btnHome = CONTENIDOBTNHOME.contenidoQuechua
+      this.btnTienda = CONTENIDOBTNTIENDA.contenidoQuechua
+      this.btnContacto = CONTENIDOBTNCONTACTO.contenidoQuechua
+
+      this.labelProducts = CONTENIDOPRODUCTO.contenidoQuechua
+
+      this.tituloCart = CONTENIDOCARTTITULO.contenidoQuechua
+      this.precioCart = CONTENIDOCARTSTOTAL.contenidoQuechua
+      this.pagarCart = CONTENIDOCARTPAGARCUENTA.contenidoQuechua
+      this.continuarPagandoCart = CONTENIDOCARTCONTINUARPAGANDO.contenidoQuechua
+
+
+      this.misionTitulo= CONTENIDOMISIONTITULO.contenidoQuechua
+      this.visionTitulo= CONTENIDOVISIONTITULO.contenidoQuechua
+
+      this.vision=CONTENIDOVISION.contenidoQuechua
+      this.mision=CONTENIDOMISION.contenidoQuechua
+
+      this.acerca = CONTENIDOACERCA.contenidoQuechua
+    }
+  }
+
+  showCarModal(products:IProduct[]){
+    this.products = products
+    this.showCart = !this.showCart
+  }
+
+  addProductCart(product: IProduct){
+    this.price = 0;
+    this.productsSelected.push(product)
+    this.productsSelected.forEach(product =>{
+      this.price = this.price + product.price;
+    })
   }
 
 }
